@@ -10,6 +10,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # The type of virtual machine to run the job on
 
+    # Add this 'environment' block
+    environment:
+      name: github-pages # This is the required environment name for GitHub Pages deployments
+
     # Grant necessary permissions for the GITHUB_TOKEN to push the build output
     permissions:
       contents: write
