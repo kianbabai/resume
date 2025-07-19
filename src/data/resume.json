@@ -1,0 +1,127 @@
+{
+  "personalInfo": {
+    "name": "Kian Babaabady",
+    "title": "Senior WordPress Developer / PHP Developer",
+    "location": "Tehran, Iran",
+    "email": "kian.babai.09@gmail.com",
+    "website": "https://www.kianbabaabady.ir",
+    "phone": "+989036957812"
+  },
+  "summary": "Senior WordPress Developer with over 10 years of experience in designing, developing, and optimizing high-performance websites and custom web applications. Proficient in a wide array of tools and languages including HTML, CSS, JavaScript, PHP, MySQL, and various WordPress-specific platforms. Possessing a deep understanding of the entire project lifecycle and business requirements, I excel at delivering robust and scalable solutions. Passionate about clean architecture, performance optimization, and backend innovation, I have a proven track record of leading WordPress development projects and integrating modern technologies like REST APIs, Node.js, and AI/LLM APIs.",
+  "experience": [
+    {
+      "title": "Freelance WordPress Developer",
+      "company": "Remote",
+      "location": "",
+      "dates": "Sep 2020 – Present",
+      "responsibilities": [
+        "Built 30+ custom WordPress themes and plugins for global clients across e-commerce, healthcare, education, and media sectors.",
+        "Designed modular and reusable plugin architecture to streamline future updates.",
+        "Collaborated with clients to understand their unique needs and goals, delivering solutions that exceeded expectations.",
+        "Managed multiple projects simultaneously, balancing competing priorities and deadlines.",
+        "Developed proficiency in HTML, CSS, JavaScript, and PHP, and stayed up-to-date with the latest trends and best practices in WordPress development.",
+        "Tools: WordPress, ACF, WPML, Elementor, WooCommerce, Git."
+      ]
+    },
+    {
+      "title": "WordPress Developer",
+      "company": "Mirabarian Company",
+      "location": "",
+      "dates": "Sep 2019 – Sep 2020",
+      "responsibilities": [
+        "Developed and maintained the company's WordPress website and related sites.",
+        "Maintained and improved corporate site for a multi-disciplinary import and consultation company.",
+        "Collaborated with designers and content creators to ensure seamless integration of website features and content.",
+        "Contributed to the development of new website features and improvements."
+      ]
+    },
+    {
+      "title": "WordPress Developer",
+      "company": "Esnews",
+      "location": "",
+      "dates": "Jun 2018 – Aug 2019",
+      "responsibilities": [
+        "Developed and maintained the company's WordPress website and custom theme.",
+        "Developed and maintained esports/gaming custom WordPress site.",
+        "Collaborated with the editorial team to ensure website content was delivered on schedule and met required quality standards.",
+        "Checked and monitored the progress of the team's development tasks, providing guidance and support when needed."
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "NBN Company",
+      "location": "",
+      "dates": "Jun 2015 – Aug 2019",
+      "responsibilities": [
+        "Developed and maintained the company's website and e-commerce website.",
+        "Built and supported websites for construction and manufacturing firm.",
+        "Collaborated with the marketing team to ensure website content was delivered on schedule and met required quality standards.",
+        "Monitored and troubleshoot IT challenges faced by the company.",
+        "Provided support to colleagues with IT related issues."
+      ]
+    }
+  ],
+  "skills": {
+    "Frontend": ["HTML5", "CSS3", "JavaScript", "jQuery", "TypeScript"],
+    "Backend": ["PHP", "Node.js", "Slim PHP", "REST API", "MySQL", "SQLite"],
+    "CMS & Tools": ["WordPress", "WooCommerce", "ACF", "Elementor", "WP-CLI"],
+    "DevOps": ["Git", "Docker", "Cloudflare Workers"],
+    "Performance & Security": ["Custom Firewall", "WP Optimization", "Technical SEO"],
+    "AI & LLM Integration": ["OpenAI", "OpenRouter", "AI Chatbot Development", "LLM APIs"],
+    "Bot Development": ["Telegram Bots"]
+  },
+  "softSkills": [
+    "Problem-solving",
+    "Attention to detail",
+    "Communication",
+    "Time management"
+  ],
+  "education": [
+    {
+      "degree": "Master of Urban Planning",
+      "university": "Azad University, Tehran South Branch",
+      "dates": "March 2014 – March 2017"
+    },
+    {
+      "degree": "Bachelor of Urbanization Engineering",
+      "university": "Sheikh Bahai University, Isfahan",
+      "dates": "March 2009 – March 2014"
+    }
+  ],
+  "languages": [
+    "English (Professional)",
+    "Farsi (Native)"
+  ],
+  "projects": {
+    "websites": [
+      { "name": "TejaratNews", "url": "https://tejaratnews.com" },
+      { "name": "Fontiran blog", "url": "https://blog.fontiran.com" },
+      { "name": "DreamFarm Agency", "url": "https://dreamfarmagency.com" },
+      { "name": "Parmis Accounting", "url": "https://parmis.shop" },
+      { "name": "Secure Database Backup", "url": "#" },
+      { "name": "CryptoCurrency Pricing", "url": "#" },
+      { "name": "WooCommerce Advanced Packaging Fees", "url": "#" },
+      { "name": "Bybv", "url": "https://bybv.co" },
+      { "name": "Golzarhome", "url": "https://golzarhome.com" },
+      { "name": "Dr Rasooli", "url": "https://dr-rasooli.com" },
+      { "name": "Padanart group", "url": "https://padan-art.com" },
+      { "name": "Ottoplant", "url": "https://ottoplant.com" },
+      { "name": "TarisGold", "url": "https://tarisgold.com" },
+      { "name": "AdventureDude", "url": "https://adventuredude.com" },
+      { "name": "Innovtechlab", "url": "https://innovtechlab.com" },
+      { "name": "Darooline", "url": "https://darooline.com" },
+      { "name": "Tabin", "url": "https://tabintech.com" },
+      { "name": "Petro Tose'e Parsa Energy", "url": "https://ptpe.ir" },
+      { "name": "Parmis Accounting Software", "url": "https://www.parmisit.com/" },
+      { "name": "Ipoosh Shop (Golrang)", "url": "https://ipooshstore.com" },
+      { "name": "DigiArki", "url": "https://digiarki.com" },
+      { "name": "BNYSNT", "url": "https://bnysnt.com" },
+      { "name": "Acaciadental", "url": "https://acaciadental.com.au" },
+      { "name": "Vertoplates", "url": "https://vertoplates.co.uk" }
+    ],
+    "plugins": [
+        { "name": "Parmis Accounting Plugin", "url": "https://parmis.shop" },
+        { "name": "AdventureDude", "url": "#" }
+    ]
+  }
+}

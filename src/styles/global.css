@@ -1,0 +1,57 @@
+/* src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom styles from your original HTML */
+
+body {
+    font-family: 'Inter', sans-serif; /* Make sure this matches your Google Font import */
+    background-color: #f9fafb; /* Light Gray */
+    color: #1f2937; /* Dark Gray */
+}
+.container {
+    /* These Tailwind classes are now in BaseLayout.astro. */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+h2 {
+    font-size: 1.875rem; /* 3xl */
+    font-weight: 700; /* bold */
+    color: #111827; /* Gray 900 */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb; /* Gray 200 */
+    padding-bottom: 0.5rem;
+}
+h3 {
+    font-size: 1.25rem; /* xl */
+    font-weight: 600; /* semibold */
+    color: #1f2937; /* Dark Gray */
+    margin-bottom: 0.5rem;
+}
+.section-content {
+    margin-bottom: 2rem;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+}
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Print Styles */
+@media print {
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        word-break: break-all;
+    }
+    .no-print {
+        display: none !important;
+    }
+}

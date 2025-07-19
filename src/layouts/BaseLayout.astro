@@ -1,0 +1,27 @@
+---
+// src/layouts/BaseLayout.astro
+import "../styles/global.css"; // Link your global CSS here
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+    <div class="container bg-white shadow-lg rounded-lg my-8 p-8 md:p-12">
+      <slot />
+      {/* This is where your page content will be injected */}
+    </div>
+  </body>
+</html>

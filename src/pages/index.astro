@@ -1,0 +1,115 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import resumeData from '../data/resume.json'; // Import your JSON data
+
+const { personalInfo, summary, experience, skills, softSkills, education, languages, projects } = resumeData;
+
+// Sort experience and education by date if needed (e.g., newest first)
+// No need for your current data, but for future reference:
+// experience.sort((a, b) => new Date(b.dates.split('–')[0].trim()).getTime() - new Date(a.dates.split('–')[0].trim()).getTime());
+// education.sort((a, b) => new Date(b.dates.split('–')[0].trim()).getTime() - new Date(a.dates.split('–')[0].trim()).getTime());
+
+const now = new Date();
+const generationTime = `Generated on: ${now.toLocaleDateString()} at ${now.toLocaleTimeString()}`;
+---
+
+<BaseLayout title={`${personalInfo.name} | ${personalInfo.title}`}>
+    <header class="text-center mb-8 pb-4 border-b border-gray-200">
+        <h1 class="text-4xl font-bold text-gray-900 mb-2">{personalInfo.name}</h1>
+        <p class="text-xl font-medium text-gray-700">{personalInfo.title}</p>
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4 text-gray-600 text-sm">
+            <span>📍 {personalInfo.location}</span>
+            <span>📧 <a href={`mailto:${personalInfo.email}`} class="text-blue-600 hover:underline print:text-black">{personalInfo.email}</a></span>
+            <span>🌐 <a href={personalInfo.website} class="text-blue-600 hover:underline print:text-black" target="_blank" rel="noopener noreferrer">{personalInfo.website.replace('https://www.', '')}</a></span>
+            <!-- <span>📞 {personalInfo.phone}</span> -->
+        </div>
+    </header>
+
+    <section class="section-content">
+        <h2>Summary</h2>
+        <p class="text-gray-700 leading-relaxed">{summary}</p>
+    </section>
+
+    <section class="section-content">
+        <h2>Experience</h2>
+        {experience.map(exp => (
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800">{exp.title}</h3>
+                <p class="text-gray-600">{exp.company} {exp.location ? `| ${exp.location}` : ''} — {exp.dates}</p>
+                <ul class="list-disc ml-6 mt-2 text-gray-700">
+                    {exp.responsibilities.map(res => (
+                        <li>{res}</li>
+                    ))}
+                </ul>
+            </div>
+        ))}
+    </section>
+
+    <section class="section-content">
+        <h2>Highlighted Projects</h2>
+        <div class="mb-6">
+            <div id="projects-websites" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-gray-700">
+                {projects.websites.map(project => (
+                    <div class="bg-gray-50 p-2 rounded-md border border-gray-200">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline print:text-black">{project.name}</a>
+                    </div>
+                ))}
+            </div>
+        </div>
+        <!-- <div>
+            <h3 class="text-lg font-semibold text-gray-800">Plugins</h3>
+            <div id="projects-plugins" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 text-gray-700">
+                {projects.plugins.map(project => (
+                    <div class="bg-gray-50 p-4 rounded-md border border-gray-200">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline print:text-black">{project.name}</a>
+                    </div>
+                ))}
+            </div>
+        </div> -->
+    </section>
+
+    <section class="section-content">
+        <h2>Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4 text-gray-700">
+            {Object.keys(skills).map(category => (
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">{category}</h3>
+                    <p>{skills[category].join(', ')}</p>
+                </div>
+            ))}
+        </div>
+    </section>
+
+    <section class="section-content">
+        <h2>Soft Skills</h2>
+        <ul class="list-disc ml-6 mt-2 text-gray-700">
+            {softSkills.map(skill => (
+                <li>{skill}</li>
+            ))}
+        </ul>
+    </section>
+
+    <section class="section-content">
+        <h2>Education</h2>
+        {education.map((edu, index) => (
+            <div class={index === 0 ? 'mb-4' : ''}> {/* Tailwind's mb-4 works, no custom class needed for last item */}
+                <h3 class="text-lg font-semibold text-gray-800">{edu.degree}</h3>
+                <p class="text-gray-600">{edu.university} | {edu.dates}</p>
+            </div>
+        ))}
+    </section>
+
+    <section class="section-content">
+        <h2>Languages</h2>
+        <ul class="list-disc ml-6 mt-2 text-gray-700">
+            {languages.map(lang => (
+                <li>{lang}</li>
+            ))}
+        </ul>
+    </section>
+
+    <footer class="text-center text-gray-500 text-sm mt-8 pt-4 border-t border-gray-200">
+        <p>{generationTime}</p>
+    </footer>
+</BaseLayout>
