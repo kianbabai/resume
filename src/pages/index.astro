@@ -19,10 +19,8 @@ const generationTime = `Generated on: ${now.toLocaleDateString()} at ${now.toLoc
         <h1 class="text-4xl font-bold text-gray-900 mb-2">{personalInfo.name}</h1>
         <p class="text-xl font-medium text-gray-700">{personalInfo.title}</p>
         <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4 text-gray-600 text-sm">
-            <span>📍 {personalInfo.location}</span>
-            <span>📧 <a href={`mailto:${personalInfo.email}`} class="text-blue-600 hover:underline print:text-black">{personalInfo.email}</a></span>
-            <span>🌐 <a href={personalInfo.website} class="text-blue-600 hover:underline print:text-black" target="_blank" rel="noopener noreferrer">{personalInfo.website.replace('https://www.', '')}</a></span>
-            <!-- <span>📞 {personalInfo.phone}</span> -->
+            <span class="text-base md:text-lg">📧 <a href="#" onclick={`window.location='mailto:' + '${personalInfo.email}'; return false;`} class="text-blue-600 hover:underline print:text-black">{personalInfo.email}</a></span>
+            <span class="text-base md:text-lg">🌐 <a href={personalInfo.website} class="text-blue-600 hover:underline print:text-black" target="_blank" rel="noopener noreferrer">{personalInfo.website.replace('https://www.', '')}</a></span>
         </div>
     </header>
 
@@ -49,24 +47,17 @@ const generationTime = `Generated on: ${now.toLocaleDateString()} at ${now.toLoc
     <section class="section-content">
         <h2>Highlighted Projects</h2>
         <div class="mb-6">
-            <div id="projects-websites" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-gray-700">
+            <div id="projects-websites" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 text-gray-700">
                 {projects.websites.map(project => (
                     <div class="bg-gray-50 p-2 rounded-md border border-gray-200">
                         <a href={project.url} target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline print:text-black">{project.name}</a>
                     </div>
                 ))}
+                <div class="bg-gray-50 p-2 rounded-md border border-gray-200 flex items-center justify-center w-full col-span-1 md:col-span-2 lg:col-span-2">
+                    <span class="text-gray-600">and others...</span>
+                </div>
             </div>
         </div>
-        <!-- <div>
-            <h3 class="text-lg font-semibold text-gray-800">Plugins</h3>
-            <div id="projects-plugins" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 text-gray-700">
-                {projects.plugins.map(project => (
-                    <div class="bg-gray-50 p-4 rounded-md border border-gray-200">
-                        <a href={project.url} target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline print:text-black">{project.name}</a>
-                    </div>
-                ))}
-            </div>
-        </div> -->
     </section>
 
     <section class="section-content">

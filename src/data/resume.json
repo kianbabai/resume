@@ -1,8 +1,8 @@
 {
   "personalInfo": {
     "name": "Kian Babaabady",
-    "title": "Senior WordPress Developer / PHP Developer",
-    "location": "Tehran, Iran",
+    "title": "PHP Backend Developer / WordPress Specialist",
+    "location": "",
     "email": "kian.babai.09@gmail.com",
     "website": "https://www.kianbabaabady.ir",
     "phone": "+989036957812"
@@ -10,10 +10,24 @@
   "summary": "Senior WordPress Developer with over 10 years of experience in designing, developing, and optimizing high-performance websites and custom web applications. Proficient in a wide array of tools and languages including HTML, CSS, JavaScript, PHP, MySQL, and various WordPress-specific platforms. Possessing a deep understanding of the entire project lifecycle and business requirements, I excel at delivering robust and scalable solutions. Passionate about clean architecture, performance optimization, and backend innovation, I have a proven track record of leading WordPress development projects and integrating modern technologies like REST APIs, Node.js, and AI/LLM APIs.",
   "experience": [
     {
+      "title": "Senior WordPress Developer",
+      "company": "DreamFarm",
+      "location": "",
+      "dates": "Oct 2024 – Present",
+      "responsibilities": [
+        "Developed custom WordPress themes/plugins for marketing/branding projects.",
+        "Collaborated with design/motion teams for pixel-perfect Figma implementation.",
+        "Built modular, reusable plugin components for faster development/maintainability.",
+        "Integrated advanced features: animation triggers, multilingual content, headless CMS, AI Chatbots",
+        "Optimized performance and security for high-traffic websites.",
+        "Tools: WordPress, ACF Pro, Elementor, REST API, Git, Cloudflare, Figma."
+      ]
+    },
+    {
       "title": "Freelance WordPress Developer",
       "company": "Remote",
       "location": "",
-      "dates": "Sep 2020 – Present",
+      "dates": "Sep 2020 – Oct 2024",
       "responsibilities": [
         "Built 30+ custom WordPress themes and plugins for global clients across e-commerce, healthcare, education, and media sectors.",
         "Designed modular and reusable plugin architecture to streamline future updates.",
