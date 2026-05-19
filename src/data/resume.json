@@ -76,13 +76,47 @@
     }
   ],
   "skills": {
-    "Frontend": ["HTML5", "CSS3", "JavaScript", "jQuery", "TypeScript"],
-    "Backend": ["PHP", "Node.js", "Slim PHP", "REST API", "MySQL", "SQLite"],
-    "CMS & Tools": ["WordPress", "WooCommerce", "ACF", "Elementor", "WP-CLI"],
-    "DevOps": ["Git", "Docker", "Cloudflare Workers"],
-    "Performance & Security": ["Custom Firewall", "WP Optimization", "Technical SEO"],
-    "AI & LLM Integration": ["OpenAI", "OpenRouter", "AI Chatbot Development", "LLM APIs"],
-    "Bot Development": ["Telegram Bots"]
+    "Frontend": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "jQuery",
+      "TypeScript"
+    ],
+    "Backend": [
+      "PHP",
+      "Node.js",
+      "Slim PHP",
+      "REST API",
+      "MySQL",
+      "SQLite"
+    ],
+    "CMS & Tools": [
+      "WordPress",
+      "WooCommerce",
+      "ACF",
+      "Elementor",
+      "WP-CLI"
+    ],
+    "DevOps": [
+      "Git",
+      "Docker",
+      "Cloudflare Workers"
+    ],
+    "Performance & Security": [
+      "Custom Firewall",
+      "WP Optimization",
+      "Technical SEO"
+    ],
+    "AI & LLM Integration": [
+      "OpenAI",
+      "OpenRouter",
+      "AI Chatbot Development",
+      "LLM APIs"
+    ],
+    "Bot Development": [
+      "Telegram Bots"
+    ]
   },
   "softSkills": [
     "Problem-solving",
@@ -108,34 +142,124 @@
   ],
   "projects": {
     "websites": [
-      { "name": "TejaratNews", "url": "https://tejaratnews.com" },
-      { "name": "Fontiran blog", "url": "https://blog.fontiran.com" },
-      { "name": "DreamFarm Agency", "url": "https://dreamfarmagency.com" },
-      { "name": "Parmis Accounting", "url": "https://parmis.shop" },
-      { "name": "Secure Database Backup", "url": "#" },
-      { "name": "CryptoCurrency Pricing", "url": "#" },
-      { "name": "WooCommerce Advanced Packaging Fees", "url": "#" },
-      { "name": "Bybv", "url": "https://bybv.co" },
-      { "name": "Golzarhome", "url": "https://golzarhome.com" },
-      { "name": "Dr Rasooli", "url": "https://dr-rasooli.com" },
-      { "name": "Padanart group", "url": "https://padan-art.com" },
-      { "name": "Ottoplant", "url": "https://ottoplant.com" },
-      { "name": "TarisGold", "url": "https://tarisgold.com" },
-      { "name": "AdventureDude", "url": "https://adventuredude.com" },
-      { "name": "Innovtechlab", "url": "https://innovtechlab.com" },
-      { "name": "Darooline", "url": "https://darooline.com" },
-      { "name": "Tabin", "url": "https://tabintech.com" },
-      { "name": "Petro Tose'e Parsa Energy", "url": "https://ptpe.ir" },
-      { "name": "Parmis Accounting Software", "url": "https://www.parmisit.com/" },
-      { "name": "Ipoosh Shop (Golrang)", "url": "https://ipooshstore.com" },
-      { "name": "DigiArki", "url": "https://digiarki.com" },
-      { "name": "BNYSNT", "url": "https://bnysnt.com" },
-      { "name": "Acaciadental", "url": "https://acaciadental.com.au" },
-      { "name": "Vertoplates", "url": "https://vertoplates.co.uk" }
+      {
+        "name": "TejaratNews",
+        "url": "https://tejaratnews.com"
+      },
+      {
+        "name": "Pakshoma",
+        "url": "https://pakshoma.com"
+      },
+      {
+        "name": "Lotus Investment Bank",
+        "url": "https://pakshoma.com"
+      },
+      {
+        "name": "Fontiran",
+        "url": "https://blog.fontiran.com"
+      },
+      {
+        "name": "DreamFarm Agency",
+        "url": "https://dreamfarmagency.com"
+      },
+      {
+        "name": "Raad Charity",
+        "url": "https://raad-charity.org/"
+      },
+      {
+        "name": "Parmis Accounting",
+        "url": "https://parmis.shop"
+      },
+      {
+        "name": "Secure Database Backup Wordpress Plugin",
+        "url": "#"
+      },
+      {
+        "name": "WooCommerce Advanced Packaging Fees Plugin",
+        "url": "#"
+      },
+      {
+        "name": "Bybv",
+        "url": "https://bybv.co"
+      },
+      {
+        "name": "Golzarhome",
+        "url": "https://golzarhome.com"
+      },
+      {
+        "name": "Dr Rasooli",
+        "url": "https://dr-rasooli.com"
+      },
+      {
+        "name": "Padanart group",
+        "url": "https://padan-art.com"
+      },
+      {
+        "name": "Ottoplant",
+        "url": "https://ottoplant.com"
+      },
+      {
+        "name": "TarisGold",
+        "url": "https://tarisgold.com"
+      },
+      {
+        "name": "AdventureDude",
+        "url": "https://adventuredude.com"
+      },
+      {
+        "name": "Innovtechlab",
+        "url": "https://innovtechlab.com"
+      },
+      {
+        "name": "Darooline",
+        "url": "https://darooline.com"
+      },
+      {
+        "name": "Tabin",
+        "url": "https://tabintech.com"
+      },
+      {
+        "name": "Petro Tose'e Parsa Energy",
+        "url": "https://ptpe.ir"
+      },
+      {
+        "name": "Parmis Accounting Software",
+        "url": "https://www.parmisit.com/"
+      },
+      {
+        "name": "Ipoosh Shop (Golrang)",
+        "url": "https://ipooshstore.com"
+      },
+      {
+        "name": "DigiArki",
+        "url": "https://digiarki.com"
+      },
+      {
+        "name": "BNYSNT",
+        "url": "https://bnysnt.com"
+      },
+      {
+        "name": "Acaciadental",
+        "url": "https://acaciadental.com.au"
+      },
+      {
+        "name": "Vertoplates",
+        "url": "https://vertoplates.co.uk"
+      },
+      {
+        "name": "NeoCharacters",
+        "url": "https://neocharacters.com/"
+      }
     ],
     "plugins": [
-        { "name": "Parmis Accounting Plugin", "url": "https://parmis.shop" },
-        { "name": "AdventureDude", "url": "#" }
+      {
+        "name": "Parmis Accounting Plugin",
+        "url": "https://parmis.shop"
+      },
+      {
+        "name": "AdventureDude",
+        "url": "#"
+      }
     ]
   }
 }
