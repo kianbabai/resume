@@ -20,7 +20,6 @@ const generationTime = `Generated on: ${now.toLocaleDateString()} at ${now.toLoc
         <p class="text-xl font-medium text-gray-700">{personalInfo.title}</p>
         <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4 text-gray-600 text-sm">
             <span class="text-base md:text-lg">📧 <a href="#" onclick={`window.location='mailto:' + '${personalInfo.email}'; return false;`} class="text-blue-600 hover:underline print:text-black">{personalInfo.email}</a></span>
-            <span class="text-base md:text-lg">🌐 <a href={personalInfo.website} class="text-blue-600 hover:underline print:text-black" target="_blank" rel="noopener noreferrer">{personalInfo.website.replace('https://www.', '')}</a></span>
         </div>
     </header>
 
