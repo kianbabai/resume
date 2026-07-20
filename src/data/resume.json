@@ -10,7 +10,7 @@
   "summary": "Senior WordPress Developer with over 10 years of experience in designing, developing, and optimizing high-performance websites and custom web applications. Proficient in a wide array of tools and languages including HTML, CSS, JavaScript, PHP, MySQL, and various WordPress-specific platforms. Possessing a deep understanding of the entire project lifecycle and business requirements, I excel at delivering robust and scalable solutions. Passionate about clean architecture, performance optimization, and backend innovation, I have a proven track record of leading WordPress development projects and integrating modern technologies like REST APIs, Node.js, and AI/LLM APIs.",
   "experience": [
     {
-      "title": "Senior WordPress Developer",
+      "title": "Senior WordPress Developer/ Backend Developer",
       "company": "DreamFarm",
       "location": "",
       "dates": "Oct 2024 – Present",
@@ -80,13 +80,11 @@
       "HTML5",
       "CSS3",
       "JavaScript",
-      "jQuery",
-      "TypeScript"
+      "jQuery"
     ],
     "Backend": [
       "PHP",
       "Node.js",
-      "Slim PHP",
       "REST API",
       "MySQL",
       "SQLite"
@@ -100,19 +98,13 @@
     ],
     "DevOps": [
       "Git",
-      "Docker",
-      "Cloudflare Workers"
-    ],
-    "Performance & Security": [
-      "Custom Firewall",
-      "WP Optimization",
-      "Technical SEO"
+      "Docker"
     ],
     "AI & LLM Integration": [
-      "OpenAI",
-      "OpenRouter",
-      "AI Chatbot Development",
-      "LLM APIs"
+      "LLM Api Wrapper",
+      "MCP",
+      "Custom AI Chatbots",
+      "Prompt Engineering"
     ],
     "Bot Development": [
       "Telegram Bots"
@@ -249,6 +241,10 @@
       {
         "name": "NeoCharacters",
         "url": "https://neocharacters.com/"
+      },
+      {
+        "name": "Golestan Co.",
+        "url": "https://golestan.com/"
       }
     ],
     "plugins": [
