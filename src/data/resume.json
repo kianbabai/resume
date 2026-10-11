@@ -163,6 +163,10 @@
         "url": "https://parmis.shop"
       },
       {
+        "name": "Safesprite Icons Plugin (WordPress.org)",
+        "url": "https://wordpress.org/plugins/safesprite-icons/"
+      },
+      {
         "name": "Secure Database Backup Wordpress Plugin",
         "url": "https://github.com/kianbabai/secure-database-backup"
       },
@@ -245,9 +249,17 @@
       {
         "name": "Golestan Co.",
         "url": "https://golestan.com/"
+      },
+      {
+        "name": "Apadana Kavosh Iranian Co.",
+        "url": "https://apadanakavosh.com/"
       }
     ],
     "plugins": [
+      {
+        "name": "Safesprite Icons",
+        "url": "https://wordpress.org/plugins/safesprite-icons/"
+      },
       {
         "name": "Parmis Accounting Plugin",
         "url": "https://parmis.shop"
