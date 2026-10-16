@@ -15,26 +15,26 @@ const generationTime = `Generated on: ${now.toLocaleDateString()} at ${now.toLoc
 ---
 
 <BaseLayout title={`${personalInfo.name} | ${personalInfo.title}`}>
-    <header class="text-center mb-8 pb-4 border-b border-gray-200">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">{personalInfo.name}</h1>
-        <p class="text-xl font-medium text-gray-700">{personalInfo.title}</p>
-        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4 text-gray-600 text-sm">
-            <span class="text-base md:text-lg">📧 <a href="#" onclick={`window.location='mailto:' + '${personalInfo.email}'; return false;`} class="text-blue-600 hover:underline print:text-black">{personalInfo.email}</a></span>
+    <header class="text-center mb-8 pt-10 pb-4 border-b border-gray-200 sm:pt-0 dark:border-gray-700">
+        <h1 class="text-4xl font-bold text-gray-900 mb-2 dark:text-gray-50">{personalInfo.name}</h1>
+        <p class="text-xl font-medium text-gray-700 dark:text-gray-300">{personalInfo.title}</p>
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4 text-gray-600 text-sm dark:text-gray-400">
+            <span class="text-base md:text-lg">📧 <a href="#" onclick={`window.location='mailto:' + '${personalInfo.email}'; return false;`} class="text-blue-600 hover:underline dark:text-blue-400 print:text-black">{personalInfo.email}</a></span>
         </div>
     </header>
 
     <section class="section-content">
         <h2>Summary</h2>
-        <p class="text-gray-700 leading-relaxed">{summary}</p>
+        <p class="text-gray-700 leading-relaxed dark:text-gray-300">{summary}</p>
     </section>
 
     <section class="section-content">
         <h2>Experience</h2>
         {experience.map(exp => (
             <div class="mb-6">
-                <h3 class="text-lg font-semibold text-gray-800">{exp.title}</h3>
-                <p class="text-gray-600">{exp.company} {exp.location ? `| ${exp.location}` : ''} — {exp.dates}</p>
-                <ul class="list-disc ml-6 mt-2 text-gray-700">
+                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">{exp.title}</h3>
+                <p class="text-gray-600 dark:text-gray-400">{exp.company} {exp.location ? `| ${exp.location}` : ''} — {exp.dates}</p>
+                <ul class="list-disc ml-6 mt-2 text-gray-700 dark:text-gray-300">
                     {exp.responsibilities.map(res => (
                         <li>{res}</li>
                     ))}
@@ -46,14 +46,14 @@ const generationTime = `Generated on: ${now.toLocaleDateString()} at ${now.toLoc
     <section class="section-content">
         <h2>Highlighted Projects</h2>
         <div class="mb-6">
-            <div id="projects-websites" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 text-gray-700">
+            <div id="projects-websites" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
                 {projects.websites.map(project => (
-                    <div class="bg-gray-50 p-2 rounded-md border border-gray-200">
-                        <a href={project.url} target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline print:text-black">{project.name}</a>
+                    <div class="bg-gray-50 p-2 rounded-md border border-gray-200 dark:bg-gray-900/40 dark:border-gray-700">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline dark:text-blue-400 print:text-black">{project.name}</a>
                     </div>
                 ))}
-                <div class="bg-gray-50 p-2 rounded-md border border-gray-200 flex items-center justify-center w-full col-span-1 md:col-span-2 lg:col-span-2">
-                    <span class="text-gray-600">and others...</span>
+                <div class="bg-gray-50 p-2 rounded-md border border-gray-200 flex items-center justify-center w-full col-span-1 md:col-span-2 lg:col-span-2 dark:bg-gray-900/40 dark:border-gray-700">
+                    <span class="text-gray-600 dark:text-gray-400">and others...</span>
                 </div>
             </div>
         </div>
@@ -61,10 +61,10 @@ const generationTime = `Generated on: ${now.toLocaleDateString()} at ${now.toLoc
 
     <section class="section-content">
         <h2>Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4 text-gray-700">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4 text-gray-700 dark:text-gray-300">
             {Object.keys(skills).map(category => (
                 <div>
-                    <h3 class="text-lg font-semibold text-gray-800">{category}</h3>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">{category}</h3>
                     <p>{skills[category].join(', ')}</p>
                 </div>
             ))}
@@ -73,7 +73,7 @@ const generationTime = `Generated on: ${now.toLocaleDateString()} at ${now.toLoc
 
     <section class="section-content">
         <h2>Soft Skills</h2>
-        <ul class="list-disc ml-6 mt-2 text-gray-700">
+        <ul class="list-disc ml-6 mt-2 text-gray-700 dark:text-gray-300">
             {softSkills.map(skill => (
                 <li>{skill}</li>
             ))}
@@ -84,22 +84,22 @@ const generationTime = `Generated on: ${now.toLocaleDateString()} at ${now.toLoc
         <h2>Education</h2>
         {education.map((edu, index) => (
             <div class={index === 0 ? 'mb-4' : ''}> {/* Tailwind's mb-4 works, no custom class needed for last item */}
-                <h3 class="text-lg font-semibold text-gray-800">{edu.degree}</h3>
-                <p class="text-gray-600">{edu.university} | {edu.dates}</p>
+                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">{edu.degree}</h3>
+                <p class="text-gray-600 dark:text-gray-400">{edu.university} | {edu.dates}</p>
             </div>
         ))}
     </section>
 
     <section class="section-content">
         <h2>Languages</h2>
-        <ul class="list-disc ml-6 mt-2 text-gray-700">
+        <ul class="list-disc ml-6 mt-2 text-gray-700 dark:text-gray-300">
             {languages.map(lang => (
                 <li>{lang}</li>
             ))}
         </ul>
     </section>
 
-    <footer class="text-center text-gray-500 text-sm mt-8 pt-4 border-t border-gray-200">
+    <footer class="text-center text-gray-500 text-sm mt-8 pt-4 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400">
         <!-- <p>{generationTime}</p> -->
     </footer>
 </BaseLayout>

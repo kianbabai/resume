@@ -4,10 +4,20 @@
 @tailwind utilities;
 /* Custom styles from your original HTML */
 
+html {
+    color-scheme: light;
+}
+html.dark {
+    color-scheme: dark;
+}
 body {
     font-family: 'Inter', sans-serif; /* Make sure this matches your Google Font import */
     background-color: #f9fafb; /* Light Gray */
     color: #1f2937; /* Dark Gray */
+}
+html.dark body {
+    background-color: #111827;
+    color: #e5e7eb;
 }
 .container {
     /* These Tailwind classes are now in BaseLayout.astro. */
@@ -23,11 +33,18 @@ h2 {
     border-bottom: 2px solid #e5e7eb; /* Gray 200 */
     padding-bottom: 0.5rem;
 }
+html.dark h2 {
+    color: #f9fafb;
+    border-bottom-color: #374151;
+}
 h3 {
     font-size: 1.25rem; /* xl */
     font-weight: 600; /* semibold */
     color: #1f2937; /* Dark Gray */
     margin-bottom: 0.5rem;
+}
+html.dark h3 {
+    color: #f3f4f6;
 }
 .section-content {
     margin-bottom: 2rem;
@@ -40,11 +57,33 @@ li {
     margin-bottom: 0.5rem;
 }
 
-/* Print Styles */
+/* Print Styles — always the light resume, even if night mode is on */
 @media print {
+    html.dark,
+    html.dark body {
+        background: #fff !important;
+        color: #111827 !important;
+        color-scheme: light;
+    }
+    html.dark .container,
+    html.dark div,
+    html.dark h1,
+    html.dark h2,
+    html.dark h3,
+    html.dark p,
+    html.dark li,
+    html.dark span {
+        background: transparent !important;
+        color: #111827 !important;
+        border-color: #e5e7eb !important;
+        box-shadow: none !important;
+    }
+    html.dark .container {
+        background: #fff !important;
+    }
     a {
         text-decoration: none;
-        color: #000;
+        color: #000 !important;
     }
     a::after {
         content: " (" attr(href) ")";
